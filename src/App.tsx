@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Research from './components/Research';
 import Contact from './components/Contact';
+import BlogCards from './components/BlogCards'; // Import the BlogCards component
 import { Moon, Sun, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
 
 function App() {
@@ -43,6 +44,14 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">Research</h2>
             <Research />
+          </div>
+        </section>
+
+        {/* Blog Section */}
+        <section id="blog" className="py-20 bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">Blog</h2>
+            <BlogCards />
           </div>
         </section>
 
