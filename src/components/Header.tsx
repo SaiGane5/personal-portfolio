@@ -24,7 +24,7 @@ export default function Header({ isDark, toggleTheme }: HeaderProps) {
           </motion.div>
           
           <nav className="hidden md:flex space-x-8">
-            {['About', 'Projects', 'Research', 'Contact'].map((item) => (
+            {['About', 'Projects', 'Research','Blog', 'Contact'].map((item) => (
               <motion.a
                 key={item}
                 whileHover={{ y: -2 }}
