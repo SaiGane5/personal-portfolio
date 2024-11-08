@@ -22,11 +22,19 @@ const projects = [
   },
   {
     title: "ToDo App",
-    description: "To Do App built using basic HTML, CSS, and JavaScript.",
+    description: "To Do App built with database and authentication",
     tech: ["Node.js", "PostgreSQL", "Express"],
     image: "https://plus.unsplash.com/premium_photo-1681487870238-4a2dfddc6bcb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VG8lMjBkbyUyMGxpc3R8ZW58MHx8MHx8fDA%3D",
     github: "https://github.com/SaiGane5/IITM_Schedule",
-    demo: "https://iitm-schedule.glitch.me/login"
+    demo: "https://iitm-schedule.glitch.me/"
+  },
+  {
+    title: "Pomo App",
+    description: "Pomo App built with customised sessions and notifications",
+    tech: ["Vite", "TailwindCSS", "React"],
+    image: "https://media.istockphoto.com/id/1331816543/photo/red-tomato-shaped-kitchen-timer-with-cooking-in-the-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQfqd2QqupPrpGpf8lgH3eLoYXJiMCtdDUYdFttPd10=",
+    github: "https://github.com/SaiGane5/PomoApp",
+    demo: "https://pomoapp.onrender.com"
   }
 ];
 
