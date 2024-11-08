@@ -9,7 +9,7 @@ import BlogCards from './components/BlogCards'; // Import the BlogCards componen
 import { Moon, Sun, Github, Linkedin, Mail, GraduationCap } from 'lucide-react';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={`min-h-screen ${darkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
