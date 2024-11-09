@@ -51,6 +51,14 @@ const projects = [
     image: "https://images.unsplash.com/photo-1458560871784-56d23406c091?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2ljfGVufDB8fDB8fHww",
     github: "https://github.com/SaiGane5/drum_kit",
     demo: "https://saigane5.github.io/drum_kit/"
+  },
+  {
+    title: "Daily Dashboard",
+    description: "Get insights of latest news and trends",
+    tech: ["Static Pages", "Extenral APIs"],
+    image: "https://media.istockphoto.com/id/1477858506/photo/news-online-in-phone-reading-newspaper-from-website-digital-publication-and-magazine-mockup.webp?a=1&b=1&s=612x612&w=0&k=20&c=rR5OzvohjHUCHubVUOiKcu6wLWT325HrOajBmByLojE=",
+    github: "https://github.com/SaiGane5/DailyDashboard",
+    demo: "https://daily-dashboard-saig.netlify.app"
   }
 ];
 
