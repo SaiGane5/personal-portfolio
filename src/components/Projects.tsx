@@ -34,7 +34,7 @@ const projects = [
     tech: ["Vite", "TailwindCSS", "React"],
     image: "https://media.istockphoto.com/id/1331816543/photo/red-tomato-shaped-kitchen-timer-with-cooking-in-the-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQfqd2QqupPrpGpf8lgH3eLoYXJiMCtdDUYdFttPd10=",
     github: "https://github.com/SaiGane5/PomoApp",
-    demo: "https://pomoapp.onrender.com"
+    demo: "https://pomoapp4iitm.netlify.app"
   }
 ];
 
