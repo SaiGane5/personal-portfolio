@@ -35,6 +35,22 @@ const projects = [
     image: "https://media.istockphoto.com/id/1331816543/photo/red-tomato-shaped-kitchen-timer-with-cooking-in-the-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=XQfqd2QqupPrpGpf8lgH3eLoYXJiMCtdDUYdFttPd10=",
     github: "https://github.com/SaiGane5/PomoApp",
     demo: "https://pomoapp4iitm.netlify.app"
+  },
+  {
+    title: "Simon Game",
+    description: "Enjoy the game",
+    tech: ["JavaScript", "HTML", "CSS"],
+    image: "https://plus.unsplash.com/premium_photo-1679430106455-e5ab13a9007b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGdhbWV8ZW58MHx8MHx8fDA%3D",
+    github: "https://github.com/SaiGane5/simon_game",
+    demo: "https://saigane5.github.io/simon_game/"
+  },
+  {
+    title: "Fun with music",
+    description: "Have fun with music",
+    tech: ["DOM", "HTML", "CSS"],
+    image: "https://images.unsplash.com/photo-1458560871784-56d23406c091?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2ljfGVufDB8fDB8fHww",
+    github: "https://github.com/SaiGane5/drum_kit",
+    demo: "https://saigane5.github.io/drum_kit/"
   }
 ];
 
