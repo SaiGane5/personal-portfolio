@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [ref, inView] = useInView({
@@ -18,27 +17,35 @@ export default function Contact() {
 
   const [submissionStatus, setSubmissionStatus] = useState<string | null>(null); // New state for feedback messages
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Formspree API endpoint
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/meojzbga";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_yontbdf',
-        'template_1gl8ykk',
-        e.target as HTMLFormElement,
-        'eaSonfKZfFcGfAUQ3h'
-      )
-      .then(
-        (result) => {
-          console.log('Email sent successfully:', result.text);
-          setSubmissionStatus('Message sent successfully!');
-          setFormData({ name: '', email: '', message: '' }); // Reset form after success
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
         },
-        (error) => {
-          console.error('Failed to send email:', error.text);
-          setSubmissionStatus('Failed to send message. Please try again later.');
-        }
-      );
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message
+        })
+      });
+
+      if (response.ok) {
+        setSubmissionStatus("Message sent successfully!");
+        setFormData({ name: '', email: '', message: '' }); // Reset form after success
+      } else {
+        setSubmissionStatus("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setSubmissionStatus("Failed to send message. Please try again later.");
+    }
   };
 
   return (
@@ -54,12 +61,14 @@ export default function Contact() {
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2 }}
             className="space-y-8"
           >
+            {/* Email */}
             <div className="flex items-center space-x-4">
               <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
                 <Mail className="text-indigo-600 dark:text-indigo-400" />
@@ -69,7 +78,7 @@ export default function Contact() {
                 <p className="text-gray-600 dark:text-gray-300">me22b133@smail.iitm.ac.in</p>
               </div>
             </div>
-
+            {/* Phone */}
             <div className="flex items-center space-x-4">
               <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
                 <Phone className="text-indigo-600 dark:text-indigo-400" />
@@ -79,7 +88,7 @@ export default function Contact() {
                 <p className="text-gray-600 dark:text-gray-300">+91 6304747031</p>
               </div>
             </div>
-
+            {/* Address */}
             <div className="flex items-center space-x-4">
               <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
                 <MapPin className="text-indigo-600 dark:text-indigo-400" />
@@ -91,6 +100,7 @@ export default function Contact() {
             </div>
           </motion.div>
 
+          {/* Contact Form */}
           <motion.form
             initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
@@ -98,6 +108,7 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="space-y-6"
           >
+            {/* Name Input */}
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Name
@@ -113,6 +124,7 @@ export default function Contact() {
               />
             </div>
 
+            {/* Email Input */}
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Email
@@ -128,6 +140,7 @@ export default function Contact() {
               />
             </div>
 
+            {/* Message Input */}
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Message
@@ -143,6 +156,7 @@ export default function Contact() {
               />
             </div>
 
+            {/* Submit Button */}
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -157,7 +171,7 @@ export default function Contact() {
 
         {/* Displaying submission status message */}
         {submissionStatus && (
-          <p className={`text-center mt-4 ${submissionStatus.includes('success') ? 'text-green-500' : 'text-red-500'}`}>
+          <p className={`text-center mt-4 ${submissionStatus.includes("success") ? "text-green-500" : "text-red-500"}`}>
             {submissionStatus}
           </p>
         )}
