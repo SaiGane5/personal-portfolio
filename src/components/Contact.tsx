@@ -24,9 +24,9 @@ export default function Contact() {
     emailjs
       .sendForm(
         'service_yontbdf',
-        'template_8ajv16r',
+        'template_1gl8ykk',
         e.target as HTMLFormElement,
-        '3U08h-rY6PWxQlj0h'
+        'eaSonfKZfFcGfAUQ3h'
       )
       .then(
         (result) => {
