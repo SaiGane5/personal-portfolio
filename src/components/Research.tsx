@@ -44,6 +44,7 @@ export default function Research() {
               <li>• Machine Learning in Education</li>
               <li>• Neural Networks</li>
               <li>• Natural Language Processing</li>
+              <li>• Information Retrieval</li>
             </ul>
           </motion.div>
         </div>
