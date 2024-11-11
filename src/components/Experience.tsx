@@ -6,8 +6,16 @@ const experienceData = [
     {
         position: "Data Science",
         company: "Indian School of Business(ISB)",
+        url: "https://1drv.ms/b/c/1fef1d9faee15539/EVg7WiAXJo5PgbHlZdllOx4B4_FTRr8KR02KKRxWmuyaBQ?e=Lb2swu",
         year: "May 2024 - July 2024",
         description: "Developed chatbot with Retrieval Augmented Generation(RAG) to assist with questions related to ISB",
+    },
+    {
+        position: "Web Development and MLOps",
+        company: "AIGurkul",
+        url: "https://ai-gurukul.vercel.app",
+        year: "March 2024 - Present",
+        description: "I have been working on developing web applications for the management of AI models. I have also been working on MLOps, which is a process of automating the deployment and monitoring of machine learning models.",
     },
 ];
 
@@ -42,7 +50,9 @@ export default function Experience() {
                                 {experience.position}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-300 mb-2">
-                                {experience.company}
+                                <a href={experience.url} target="_blank" rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-400">
+                                    {experience.company}
+                                </a>
                             </p>
                             <p className="text-gray-600 dark:text-gray-300 mb-4">
                                 {experience.year}
