@@ -50,7 +50,12 @@ export default function Experience() {
                                 {experience.position}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-300 mb-2">
-                                <a href={experience.url} target="_blank" rel="noopener noreferrer" className="underline text-blue-600 dark:text-blue-400">
+                                <a
+                                    href={experience.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block text-indigo-600 dark:text-indigo-400 font-medium hover:text-indigo-700 transition-colors hover:underline"
+                                >
                                     {experience.company}
                                 </a>
                             </p>

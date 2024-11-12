@@ -64,7 +64,7 @@ const BlogCards = () => {
                         <div className="mt-4">
                             <a
                                 href={blog.link}
-                                className="inline-block text-indigo-600 dark:text-indigo-400 font-medium hover:text-indigo-700 transition-colors"
+                                className="inline-block text-indigo-600 dark:text-indigo-400 font-medium hover:text-indigo-700 transition-colors hover:underline"
                             >
                                 Read More &rarr;
                             </a>
