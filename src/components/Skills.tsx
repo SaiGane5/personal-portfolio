@@ -5,7 +5,7 @@ import { Code, Database, Brain, Terminal } from 'lucide-react';
 
 const skills = {
   programming: ['Python', 'C++', 'JavaScript', 'Fish'],
-  frameworks: ['TensorFlow', 'PyTorch', 'React', 'Node.js', 'Express'],
+  frameworks: ['LlamaIndex','TensorFlow', 'PyTorch', 'React', 'Node.js', 'Express'],
   databases: ['MongoDB', 'PostgreSQL'],
   tools: ['Git', 'Docker', 'AWS', 'Linux']
 };
