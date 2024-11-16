@@ -41,6 +41,14 @@ const BlogCards = () => {
             imageUrl: "https://images.unsplash.com/photo-1620228885847-9eab2a1adddc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
             link: "https://tech-with-saig.notion.site/The-No-Nonsense-Guide-to-Intraday-Trading-140c5223a971803dbaf9fa4697eff31c",
         },
+         {
+            title: "My Top Picks",
+            description: "In this blog, I listed my favourite Books, Series, Movies and my future watchlist",
+            author: "Sai Ganesh",
+            date: "Nov 16, 2024",
+            imageUrl: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600",
+            link: "https://tech-with-saig.notion.site/My-Top-Books-Series-Movies-and-Why-I-Love-Them-8366077a59194e9f908f816344373ff6",
+        },
     ];
 
     return (
