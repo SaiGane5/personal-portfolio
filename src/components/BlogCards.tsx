@@ -33,6 +33,14 @@ const BlogCards = () => {
             imageUrl: "https://tech-with-saig.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F071081ce-43de-4fe1-aa78-0dfbfcabba67%2Ff50b2c96-e0f5-4647-b4ff-f827a8efc9d6%2FAvg_Life_At_IITM.png?table=block&id=138c5223-a971-8010-a3cb-f7eb32e03f6a&spaceId=071081ce-43de-4fe1-aa78-0dfbfcabba67&width=2000&userId=&cache=v2",
             link: "https://tech-with-saig.notion.site/A-Day-in-the-Life-of-an-IIT-Madras-Student-The-Chaos-The-Hustle-and-All-the-Unnecessary-Romance-138c5223a9718010a3cbf7eb32e03f6a",
         },
+        {
+            title: "Intraday Trading Blog",
+            description: "In this blog, you can learn about the working strategies in Intraday trading with low initial capical",
+            author: "Sai Ganesh",
+            date: "Nov 16, 2024",
+            imageUrl: "https://images.unsplash.com/photo-1620228885847-9eab2a1adddc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=4800",
+            link: "https://tech-with-saig.notion.site/The-No-Nonsense-Guide-to-Intraday-Trading-140c5223a971803dbaf9fa4697eff31c",
+        },
     ];
 
     return (
