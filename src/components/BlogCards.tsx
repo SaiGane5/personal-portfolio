@@ -15,7 +15,7 @@ const BlogCards = () => {
             author: "Sai Ganesh",
             date: "Nov 9, 2024",
             imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaHxlbnwwfHwwfHx8MA%3D%3D",
-            link: "https://tech-with-saig.notion.site/Technology-8617fddaff5e45f088edb3a029a75d10",
+            link: "https://techwithsaig.super.site/",
         },
         {
             title: "Personal Finance Blog",
