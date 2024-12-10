@@ -14,7 +14,7 @@ export default function Hero() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 260, damping: 20 }}
-          src="https://github.com/SaiGane5/personal-portfolio/blob/main/src/Profile_Photo.jpg?raw=true"
+          src="https://media.licdn.com/dms/image/v2/D4E03AQGiTS0ngPd3pg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1672996114639?e=1739404800&v=beta&t=4pJn1T988XynMZnEilfrQgtv-QyumUkT5hZ--mctkaY"
           alt="Profile"
           className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white dark:border-gray-700 shadow-lg"
         />
