@@ -18,7 +18,7 @@ const projects = [
     tech: ["FastAPI", "React", "OpenAI", "AWS", "LlamaIndex"],
     image: "https://plus.unsplash.com/premium_photo-1726079247110-5e593660c7b2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2hhdGJvdCUyMGZvciUyMGVudGVycHJpc2V8ZW58MHx8MHx8fDA%3D",
     github: "https://github.com/SaiGane5/I-Venture-Chatbot",
-    demo: "https://52.0.160.0/"
+    demo: "https://i-venture-chatbot.aigurukul.dev/"
   },
   {
     title: "ToDo App",
